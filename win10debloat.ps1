@@ -34,7 +34,8 @@ $tweaks = @(
 	"InstallAdobe",
 	"Install7Zip",
 	"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+	"InstallChocolateyGUI"
+	"InstallVLC",
 
 	### Windows Apps
 	"DebloatAll",
@@ -62,7 +63,7 @@ $tweaks = @(
 	"SetUACLow",                  # "SetUACHigh",
 	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
 	# "DisableAdminShares",           # "EnableAdminShares",
-	"DisableSMB1",                # "EnableSMB1",
+	#"DisableSMB1",                # "EnableSMB1",		#CHANGE++++++
 	# "DisableSMBServer",           # "EnableSMBServer",
 	# "DisableLLMNR",               # "EnableLLMNR",
 	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
@@ -139,14 +140,14 @@ $tweaks = @(
 	# "HideDocumentsFromExplorer",  # "ShowDocumentsInExplorer",
 	# "HideDownloadsFromThisPC",      # "ShowDownloadsInThisPC",
 	# "HideDownloadsFromExplorer",  # "ShowDownloadsInExplorer",
-	"HideMusicFromThisPC",          # "ShowMusicInThisPC",
-	"HideMusicFromExplorer",      # "ShowMusicInExplorer",
+	#"HideMusicFromThisPC",          # "ShowMusicInThisPC", 	#CHANCE+++++++
+	#"HideMusicFromExplorer",       # "ShowMusicInExplorer",	#CHANCE+++++++
 	# "HidePicturesFromThisPC",       # "ShowPicturesInThisPC",
 	# "HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
-	"HideVideosFromThisPC",         # "ShowVideosInThisPC",
-	"HideVideosFromExplorer",     # "ShowVideosInExplorer",
-	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
-	"Hide3DObjectsFromExplorer",  # "Show3DObjectsInExplorer",
+	#"HideVideosFromThisPC",         # "ShowVideosInThisPC",	#CHANCE+++++++
+	#"HideVideosFromExplorer",     # "ShowVideosInExplorer",	#CHANCE+++++++
+	#"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",	#CHANCE+++++++
+	#"Hide3DObjectsFromExplorer",  # "Show3DObjectsInExplorer",	#CHANCE+++++++
 	# "DisableThumbnails",          # "EnableThumbnails",
 	# "DisableThumbsDB",              # "EnableThumbsDB",
 
@@ -156,9 +157,9 @@ $tweaks = @(
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
-	# "DisableXboxFeatures",          # "EnableXboxFeatures",
+	"DisableXboxFeatures",          # "EnableXboxFeatures",		#CHANCE+++++++
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
-	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
+	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",	#CHANCE+++++++
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
 	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
@@ -221,9 +222,14 @@ Function InstallNotepadplusplus {
 	choco install notepadplusplus -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+Function InstallVLC {
+	Write-Output "Installing VLC"
+	choco install vlc -y
+}
+
+Function InstallChocolateyGUI {
+	Write-Output "Installing ChocoGUI"
+	choco install chocolateygui -y
 }
 
 ##########
