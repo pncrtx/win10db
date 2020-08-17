@@ -36,6 +36,23 @@ $tweaks = @(
 	"InstallNotepadplusplus",
 	"InstallChocolateyGUI"
 	"InstallVLC",
+	"InstallChrome",
+	"InstallDriverBooster",
+	"InstallAutoHotKey",
+	"InstallDotNETCoreSDK31",
+	"InstallDotNET35 ",
+	"InstallVisualCplus2010",
+	"InstallChrome",
+	"InstallqBittorrent",
+	"InstallAutoHotKey",
+	"InstallDriverBooster",
+	"InstallCCleaner",
+	"InstallBleachBit",
+	"InstallWinSCP",
+	"InstallWox",
+	"InstallPutty",
+	"InstallAIMP",
+	"InstallPowerToys",
 
 	### Windows Apps
 	"DebloatAll",
@@ -63,15 +80,15 @@ $tweaks = @(
 	"SetUACLow",                  # "SetUACHigh",
 	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
 	# "DisableAdminShares",           # "EnableAdminShares",
-	#"DisableSMB1",                # "EnableSMB1",		#CHANGE++++++
-	# "DisableSMBServer",           # "EnableSMBServer",
+	#"DisableSMB1",                 "EnableSMB1",		#CHANGE++++++
+	# "DisableSMBServer",            "EnableSMBServer",  	#New_Change to enable
 	# "DisableLLMNR",               # "EnableLLMNR",
 	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
 	"SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
 	"DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
 	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
 	# "DisableFirewall",            # "EnableFirewall",
-	"DisableDefender",            # "EnableDefender",
+	#"DisableDefender",             "EnableDefender", 	#NEW_change
 	"DisableDefenderCloud",       # "EnableDefenderCloud",
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
 	#"SetDEPOptOut",                 # "SetDEPOptIn",
@@ -98,10 +115,10 @@ $tweaks = @(
 	"DisableHibernation",		# "EnableHibernation",          # 
 	"EnableSleepButton",		# "DisableSleepButton",         
 	"DisableSleepTimeout",        # "EnableSleepTimeout",
-	# "DisableFastStartup",         # "EnableFastStartup",
+	# "DisableFastStartup",          "EnableFastStartup",		#New_change
 
 	### UI Tweaks ###
-	"DisableActionCenter",          # "EnableActionCenter",
+	#"DisableActionCenter",           "EnableActionCenter",		#New_change
 	"DisableLockScreen",            # "EnableLockScreen",
 	"DisableLockScreenRS1",       # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
@@ -159,7 +176,7 @@ $tweaks = @(
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
 	"DisableXboxFeatures",          # "EnableXboxFeatures",		#CHANCE+++++++
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
-	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",	#CHANCE+++++++
+	#"InstallMediaPlayer", 		 "UninstallMediaPlayer",	#CHANCE to unistall+++++++
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
 	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
@@ -168,7 +185,7 @@ $tweaks = @(
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
 	"InstallPDFPrinter",		# "UninstallPDFPrinter",
 	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
-	# "RemoveFaxPrinter",             # "AddFaxPrinter",
+	"RemoveFaxPrinter",             # "AddFaxPrinter",		#New_Change
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
@@ -230,6 +247,77 @@ Function InstallVLC {
 Function InstallChocolateyGUI {
 	Write-Output "Installing ChocoGUI"
 	choco install chocolateygui -y
+}
+
+Function InstallDotNETCoreSDK31 {
+	Write-Output "Installing DotNET Core SDK "
+	choco install dotnetcore-sdk -y
+}
+
+Function InstallDotNET35 {
+	Write-Output "Installing DotNet 35"
+	choco install dotnet3.5 -y
+}
+
+Function InstallChrome {
+	Write-Output "Installing Chrome"
+	choco install googlechrome -y
+}
+
+Function InstallqBittorrent {
+	Write-Output "Installing qBittorrent"
+	choco install qbittorrent -y
+}
+
+Function InstallAutoHotKey {
+	Write-Output "Installing AutoHotKey"
+	choco install autohotkey -y
+}
+
+Function InstallDriverBooster {
+	Write-Output "Installing Driver Booster"
+	choco install driverbooster -y
+}
+
+Function InstallCCleaner {
+	Write-Output "Installing CCleaner"
+	choco install ccleaner -y
+}
+
+
+Function InstallBleachBit {
+	Write-Output "Installing BleachBit"
+	choco install bleachbit -y
+}
+
+Function InstallWinSCP{
+	Write-Output "Installing WinSCP"
+	choco install winscp -y
+}
+
+Function InstallWox{
+	Write-Output "Installing Wox"
+	choco install wox -y
+}
+
+Function InstallPutty {
+	Write-Output "Installing Putty"
+	choco install putty -y
+}
+
+Function InstallAIMP {
+	Write-Output "Installing AIMP"
+	choco install aimp -y
+}
+
+Function InstallPowerToys {
+	Write-Output "Installing PowerToys"
+	choco install powertoys -y
+}
+
+Function InstallVisualCplus2010 {
+	Write-Output "Installing Visual Cplus2010"
+	choco install vcredist2010 -y
 }
 
 ##########
