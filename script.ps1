@@ -42,8 +42,8 @@ $tweaks = @(
 	"InstallDotNETCoreSDK31",
 	"InstallDotNET35 ",
 	"InstallVisualCplus2010",
-	"InstallChrome",
 	"InstallqBittorrent",
+	"InstallPowerToys",
 	"InstallAutoHotKey",
 	"InstallDriverBooster",
 	"InstallCCleaner",
@@ -52,7 +52,6 @@ $tweaks = @(
 	"InstallWox",
 	"InstallPutty",
 	"InstallAIMP",
-	"InstallPowerToys",
 
 	### Windows Apps
 	"DebloatAll",
