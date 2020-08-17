@@ -118,7 +118,7 @@ $tweaks = @(
 	# "DisableFastStartup",          "EnableFastStartup",		#New_change
 
 	### UI Tweaks ###
-	"DisableActionCenter",           #"EnableActionCenter",		#New_change disable back
+	#"DisableActionCenter",           #"EnableActionCenter",		#New_change disable back
 	"DisableLockScreen",            # "EnableLockScreen",
 	"DisableLockScreenRS1",       # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
