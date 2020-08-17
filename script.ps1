@@ -46,12 +46,12 @@ $tweaks = @(
 	"InstallPowerToys",
 	"InstallAutoHotKey",
 	"InstallDriverBooster",
-	"InstallCCleaner",
 	"InstallBleachBit",
 	"InstallWinSCP",
 	"InstallWox",
 	"InstallPutty",
 	"InstallAIMP",
+	"InstallCCleaner",
 
 	### Windows Apps
 	"DebloatAll",
