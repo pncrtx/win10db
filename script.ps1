@@ -112,13 +112,13 @@ $tweaks = @(
 	"DisableSuperfetch",          # "EnableSuperfetch",
 	"DisableIndexing",            # "EnableIndexing",
 	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
-	"DisableHibernation",		# "EnableHibernation",          # 
+	"DisableHibernation",		# "EnableHibernation",          
 	"EnableSleepButton",		# "DisableSleepButton",         
 	"DisableSleepTimeout",        # "EnableSleepTimeout",
 	# "DisableFastStartup",          "EnableFastStartup",		#New_change
 
 	### UI Tweaks ###
-	#"DisableActionCenter",           "EnableActionCenter",		#New_change
+	"DisableActionCenter",           #"EnableActionCenter",		#New_change disable back
 	"DisableLockScreen",            # "EnableLockScreen",
 	"DisableLockScreenRS1",       # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
@@ -127,13 +127,13 @@ $tweaks = @(
 	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
 	"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
-	#"HideTaskbarSearch",
-	"ShowTaskbarSearchIcon",      # "ShowTaskbarSearchBox",
-	"HideTaskView",                 # "ShowTaskView",
+	"HideTaskbarSearch",						#CHANGE
+	#"ShowTaskbarSearchIcon",      # "ShowTaskbarSearchBox",	#Change
+	#"HideTaskView",                 # "ShowTaskView",		#New_change
 	# "ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
 	# "SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	# "HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
-	"ShowTrayIcons",                # "HideTrayIcons",
+	#"ShowTrayIcons",                # "HideTrayIcons",		#NEW_Change
 	"DisableSearchAppInStore",      # "EnableSearchAppInStore",
 	"DisableNewAppPrompt",          # "EnableNewAppPrompt",
 	# "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
@@ -144,10 +144,10 @@ $tweaks = @(
 	"Stop-EdgePDF",
 
 	### Explorer UI Tweaks ###
-	"ShowKnownExtensions",          # "HideKnownExtensions",
+	#"ShowKnownExtensions",          # "HideKnownExtensions", 	#Change+++++
 	# "ShowHiddenFiles",              # "HideHiddenFiles",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
-	# "HideRecentShortcuts",          # "ShowRecentShortcuts",
+	"HideRecentShortcuts",          # "ShowRecentShortcuts",	#Change+++
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
 	"HideThisPCFromDesktop",	# "ShowThisPCOnDesktop",
 	# "ShowUserFolderOnDesktop",    # "HideUserFolderFromDesktop",
@@ -197,7 +197,7 @@ $tweaks = @(
 
 	### Unpinning ###
 	"UnpinStartMenuTiles",
-	#"UnpinTaskbarIcons",
+	"UnpinTaskbarIcons",		#Change+++++++
 
 	### Auxiliary Functions ###
 	"WaitForKey"
@@ -2657,11 +2657,11 @@ Function DebloatAll {
         "*Dolby*"
              
         #Optional: Typically not removed but you can if you need to for some reason
-        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
-        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
-        #"*Microsoft.BingWeather*"
+        "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"   ##Change
+        "*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"	##Change
+        "*Microsoft.BingWeather*"				###CHANGE+++++++++++++++++
         #"*Microsoft.MSPaint*"
-        #"*Microsoft.MicrosoftStickyNotes*"
+        "*Microsoft.MicrosoftStickyNotes*"			###CHange++++++
         #"*Microsoft.Windows.Photos*"
         #"*Microsoft.WindowsCalculator*"
         #"*Microsoft.WindowsStore*"
