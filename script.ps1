@@ -34,10 +34,10 @@ $tweaks = @(
 	"InstallAdobe",
 	"Install7Zip",
 	"InstallNotepadplusplus",
+	"InstallPutty",
 	"InstallChocolateyGUI"
 	"InstallVLC",
 	"InstallChrome",
-	"InstallDriverBooster",
 	"InstallAutoHotKey",
 	"InstallDotNETCoreSDK31",
 	"InstallDotNET35 ",
@@ -45,13 +45,12 @@ $tweaks = @(
 	"InstallqBittorrent",
 	"InstallPowerToys",
 	"InstallAutoHotKey",
-	"InstallDriverBooster",
 	"InstallBleachBit",
 	"InstallWinSCP",
-	"InstallWox",
-	"InstallPutty",
 	"InstallAIMP",
 	"InstallCCleaner",
+	"InstallDriverBooster",
+	"InstallWox",
 
 	### Windows Apps
 	"DebloatAll",
