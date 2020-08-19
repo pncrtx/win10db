@@ -49,6 +49,7 @@ $tweaks = @(
 	"InstallWinSCP",
 	"InstallAIMP",
 	"InstallCCleaner",
+	"InstallAdvancedSystemCare",
 	"InstallDriverBooster",
 	"InstallWox",
 
@@ -316,6 +317,16 @@ Function InstallPowerToys {
 Function InstallVisualCplus2010 {
 	Write-Output "Installing Visual Cplus2010"
 	choco install vcredist2010 -y
+}
+
+Function InstallSDFormatter {
+	Write-Output "Installing SD Card Memory Formatter"
+	choco install sdcard-formatter -y
+}
+
+Function InstallAdvancedSystemCare{
+	Write-Output "Installing Advanced System Care"
+	choco install afedteated -y
 }
 
 ##########
