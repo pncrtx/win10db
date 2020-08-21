@@ -44,7 +44,6 @@ $tweaks = @(
 	"InstallVisualCplus2010",
 	"InstallqBittorrent",
 	"InstallPowerToys",
-	"InstallAutoHotKey",
 	"InstallBleachBit",
 	"InstallWinSCP",
 	"InstallAIMP",
