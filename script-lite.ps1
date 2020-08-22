@@ -86,7 +86,7 @@ $tweaks = @(
 	"DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
 	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
 	# "DisableFirewall",            # "EnableFirewall",
-	#"DisableDefender",             "EnableDefender", 	#NEW_change
+	"DisableDefender",             #"EnableDefender", 	#NEW_change
 	"DisableDefenderCloud",       # "EnableDefenderCloud",
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
 	#"SetDEPOptOut",                 # "SetDEPOptIn",
@@ -116,7 +116,7 @@ $tweaks = @(
 	# "DisableFastStartup",          "EnableFastStartup",		#New_change
 
 	### UI Tweaks ###
-	#"DisableActionCenter",           #"EnableActionCenter",		#New_change disable back
+	"DisableActionCenter",           #"EnableActionCenter",		#New_change disable back
 	"DisableLockScreen",            # "EnableLockScreen",
 	"DisableLockScreenRS1",       # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
@@ -142,7 +142,7 @@ $tweaks = @(
 	"Stop-EdgePDF",
 
 	### Explorer UI Tweaks ###
-	#"ShowKnownExtensions",          # "HideKnownExtensions", 	#Change+++++
+	"ShowKnownExtensions",          # "HideKnownExtensions", 	#Change+++++
 	# "ShowHiddenFiles",              # "HideHiddenFiles",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	"HideRecentShortcuts",          # "ShowRecentShortcuts",	#Change+++
