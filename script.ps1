@@ -199,7 +199,7 @@ $tweaks = @(
 
 	### Auxiliary Functions ###
 	"WaitForKey"
-	#"Restart"
+	"Restart"
 )
 
 #########
@@ -2556,7 +2556,7 @@ Function RequireAdmin {
 # Wait for key press
 Function WaitForKey {
 	Write-Output "Press any key to continue..."
-	[Console]::ReadKey($true) | Out-Null
+	[System.Console]::ReadKey($true) #| Out-Null
 }
 
 # Restart computer
