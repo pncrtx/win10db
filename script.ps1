@@ -142,7 +142,7 @@ $tweaks = @(
 	"Stop-EdgePDF",
 
 	### Explorer UI Tweaks ###
-	#"ShowKnownExtensions",          # "HideKnownExtensions", 	#Change+++++
+	"ShowKnownExtensions",          "HideKnownExtensions", 	#Change+++++To HIDE 
 	# "ShowHiddenFiles",              # "HideHiddenFiles",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	"HideRecentShortcuts",          # "ShowRecentShortcuts",	#Change+++
