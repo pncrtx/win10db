@@ -34,7 +34,7 @@ $tweaks = @(
 	#"InstallAdobe",
 	"Install7Zip",
 	"InstallNotepadplusplus",
-	"InstallPutty",
+	#"InstallPutty",
 	"InstallChocolateyGUI"
 	#"InstallVLC",
 	"InstallChrome",
@@ -43,14 +43,14 @@ $tweaks = @(
 	#"InstallDotNET35 ",
 	#"InstallVisualCplus2010",
 	#"InstallqBittorrent",
-	#"InstallPowerToys",
+	"InstallPowerToys",
 	"InstallBleachBit",
 	#"InstallWinSCP",
 	#"InstallAIMP",
 	"InstallCCleaner",
 	#"InstallAdvancedSystemCare",
 	#"InstallDriverBooster",
-	"InstallWox",
+	#"InstallWox",
 
 	### Windows Apps
 	"DebloatAll",
