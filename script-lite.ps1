@@ -37,7 +37,7 @@ $tweaks = @(
 	#"InstallPutty",
 	"InstallChocolateyGUI"
 	#"InstallVLC",
-	"InstallChrome",
+	#"InstallChrome",
 	#"InstallAutoHotKey",
 	#"InstallDotNETCoreSDK31",
 	#"InstallDotNET35 ",
